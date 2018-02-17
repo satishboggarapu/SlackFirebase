@@ -8,12 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		10C3557C2037A9A6002303BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C3557B2037A9A6002303BF /* AppDelegate.swift */; };
-		10C3557E2037A9A6002303BF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C3557D2037A9A6002303BF /* ViewController.swift */; };
+		10C3557E2037A9A6002303BF /* TeamsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C3557D2037A9A6002303BF /* TeamsViewController.swift */; };
 		10C355812037A9A6002303BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10C3557F2037A9A6002303BF /* Main.storyboard */; };
 		10C355832037A9A6002303BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10C355822037A9A6002303BF /* Assets.xcassets */; };
 		10C355862037A9A6002303BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10C355842037A9A6002303BF /* LaunchScreen.storyboard */; };
 		10C355912037A9A7002303BF /* SlackFirebaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C355902037A9A7002303BF /* SlackFirebaseTests.swift */; };
 		10C3559C2037A9A7002303BF /* SlackFirebaseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C3559B2037A9A7002303BF /* SlackFirebaseUITests.swift */; };
+		10C355AA2037AD15002303BF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 10C355A92037AD15002303BF /* GoogleService-Info.plist */; };
+		10C355AD2037CDB7002303BF /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C355AC2037CDB7002303BF /* LoginViewController.swift */; };
+		10C355AF20388AB5002303BF /* AddNewTeamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C355AE20388AB5002303BF /* AddNewTeamViewController.swift */; };
+		10C355B22038B5E3002303BF /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C355B12038B5E3002303BF /* Team.swift */; };
+		D444D331DA02BF10AF884525 /* Pods_SlackFirebaseTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E00BED8D2D47172C6FAF477 /* Pods_SlackFirebaseTests.framework */; };
+		F32CA26767E8AB1D57EFA802 /* Pods_SlackFirebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D113E642BA368D040ED4E417 /* Pods_SlackFirebase.framework */; };
+		F773FA9AA5B3DEFD658191C3 /* Pods_SlackFirebaseUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA9D37D005831597F6E2769A /* Pods_SlackFirebaseUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +41,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		03142154E18B9E2401E17D07 /* Pods-SlackFirebaseTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SlackFirebaseTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SlackFirebaseTests/Pods-SlackFirebaseTests.release.xcconfig"; sourceTree = "<group>"; };
 		10C355782037A9A6002303BF /* SlackFirebase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SlackFirebase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		10C3557B2037A9A6002303BF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		10C3557D2037A9A6002303BF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		10C3557D2037A9A6002303BF /* TeamsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsViewController.swift; sourceTree = "<group>"; };
 		10C355802037A9A6002303BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		10C355822037A9A6002303BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		10C355852037A9A6002303BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +55,18 @@
 		10C355972037A9A7002303BF /* SlackFirebaseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SlackFirebaseUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		10C3559B2037A9A7002303BF /* SlackFirebaseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlackFirebaseUITests.swift; sourceTree = "<group>"; };
 		10C3559D2037A9A7002303BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		10C355A92037AD15002303BF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		10C355AC2037CDB7002303BF /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		10C355AE20388AB5002303BF /* AddNewTeamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewTeamViewController.swift; sourceTree = "<group>"; };
+		10C355B12038B5E3002303BF /* Team.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
+		15B61586FB3CF83533C60AD1 /* Pods-SlackFirebaseTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SlackFirebaseTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SlackFirebaseTests/Pods-SlackFirebaseTests.debug.xcconfig"; sourceTree = "<group>"; };
+		35137C185684E7933262DA84 /* Pods-SlackFirebaseUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SlackFirebaseUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SlackFirebaseUITests/Pods-SlackFirebaseUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		5A218DD731BA8DCD426DC236 /* Pods-SlackFirebaseUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SlackFirebaseUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SlackFirebaseUITests/Pods-SlackFirebaseUITests.release.xcconfig"; sourceTree = "<group>"; };
+		6E00BED8D2D47172C6FAF477 /* Pods_SlackFirebaseTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SlackFirebaseTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D113E642BA368D040ED4E417 /* Pods_SlackFirebase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SlackFirebase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D521ED342A60B8CFC905B5E1 /* Pods-SlackFirebase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SlackFirebase.release.xcconfig"; path = "Pods/Target Support Files/Pods-SlackFirebase/Pods-SlackFirebase.release.xcconfig"; sourceTree = "<group>"; };
+		D660C7EDD957C94FEBBCDFF5 /* Pods-SlackFirebase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SlackFirebase.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SlackFirebase/Pods-SlackFirebase.debug.xcconfig"; sourceTree = "<group>"; };
+		EA9D37D005831597F6E2769A /* Pods_SlackFirebaseUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SlackFirebaseUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F32CA26767E8AB1D57EFA802 /* Pods_SlackFirebase.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D444D331DA02BF10AF884525 /* Pods_SlackFirebaseTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F773FA9AA5B3DEFD658191C3 /* Pods_SlackFirebaseUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +104,8 @@
 				10C3558F2037A9A7002303BF /* SlackFirebaseTests */,
 				10C3559A2037A9A7002303BF /* SlackFirebaseUITests */,
 				10C355792037A9A6002303BF /* Products */,
+				90B5AEB217E7E01AE6655656 /* Pods */,
+				4AB0F06B494DB7F49BDA0069 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,12 +122,14 @@
 		10C3557A2037A9A6002303BF /* SlackFirebase */ = {
 			isa = PBXGroup;
 			children = (
+				10C355B02038B5D5002303BF /* Models */,
+				10C355AB2037CDA1002303BF /* ViewController */,
 				10C3557B2037A9A6002303BF /* AppDelegate.swift */,
-				10C3557D2037A9A6002303BF /* ViewController.swift */,
 				10C3557F2037A9A6002303BF /* Main.storyboard */,
 				10C355822037A9A6002303BF /* Assets.xcassets */,
 				10C355842037A9A6002303BF /* LaunchScreen.storyboard */,
 				10C355872037A9A6002303BF /* Info.plist */,
+				10C355A92037AD15002303BF /* GoogleService-Info.plist */,
 			);
 			path = SlackFirebase;
 			sourceTree = "<group>";
@@ -125,6 +152,47 @@
 			path = SlackFirebaseUITests;
 			sourceTree = "<group>";
 		};
+		10C355AB2037CDA1002303BF /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				10C355AC2037CDB7002303BF /* LoginViewController.swift */,
+				10C3557D2037A9A6002303BF /* TeamsViewController.swift */,
+				10C355AE20388AB5002303BF /* AddNewTeamViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		10C355B02038B5D5002303BF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				10C355B12038B5E3002303BF /* Team.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4AB0F06B494DB7F49BDA0069 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D113E642BA368D040ED4E417 /* Pods_SlackFirebase.framework */,
+				6E00BED8D2D47172C6FAF477 /* Pods_SlackFirebaseTests.framework */,
+				EA9D37D005831597F6E2769A /* Pods_SlackFirebaseUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		90B5AEB217E7E01AE6655656 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D660C7EDD957C94FEBBCDFF5 /* Pods-SlackFirebase.debug.xcconfig */,
+				D521ED342A60B8CFC905B5E1 /* Pods-SlackFirebase.release.xcconfig */,
+				15B61586FB3CF83533C60AD1 /* Pods-SlackFirebaseTests.debug.xcconfig */,
+				03142154E18B9E2401E17D07 /* Pods-SlackFirebaseTests.release.xcconfig */,
+				35137C185684E7933262DA84 /* Pods-SlackFirebaseUITests.debug.xcconfig */,
+				5A218DD731BA8DCD426DC236 /* Pods-SlackFirebaseUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +200,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 10C355A02037A9A7002303BF /* Build configuration list for PBXNativeTarget "SlackFirebase" */;
 			buildPhases = (
+				9C4002D23A1AE21074900B10 /* [CP] Check Pods Manifest.lock */,
 				10C355742037A9A6002303BF /* Sources */,
 				10C355752037A9A6002303BF /* Frameworks */,
 				10C355762037A9A6002303BF /* Resources */,
+				140EB141262168B09DC6F159 /* [CP] Embed Pods Frameworks */,
+				FE9CC6BBF34CC97371A3F4E8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,9 +220,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 10C355A32037A9A7002303BF /* Build configuration list for PBXNativeTarget "SlackFirebaseTests" */;
 			buildPhases = (
+				76DB5425C4934CDAC702DB29 /* [CP] Check Pods Manifest.lock */,
 				10C355882037A9A7002303BF /* Sources */,
 				10C355892037A9A7002303BF /* Frameworks */,
 				10C3558A2037A9A7002303BF /* Resources */,
+				AF96DA7F7EA779BBE26C9164 /* [CP] Embed Pods Frameworks */,
+				53F736295C736EC3F20F67C5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +241,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 10C355A62037A9A7002303BF /* Build configuration list for PBXNativeTarget "SlackFirebaseUITests" */;
 			buildPhases = (
+				69FA28BE462747843496F7EA /* [CP] Check Pods Manifest.lock */,
 				10C355932037A9A7002303BF /* Sources */,
 				10C355942037A9A7002303BF /* Frameworks */,
 				10C355952037A9A7002303BF /* Resources */,
+				427F0A11A6E79F96FBEDE33F /* [CP] Embed Pods Frameworks */,
+				4D13A2BDAC577FF784D1EF1A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -233,6 +310,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				10C355862037A9A6002303BF /* LaunchScreen.storyboard in Resources */,
+				10C355AA2037AD15002303BF /* GoogleService-Info.plist in Resources */,
 				10C355832037A9A6002303BF /* Assets.xcassets in Resources */,
 				10C355812037A9A6002303BF /* Main.storyboard in Resources */,
 			);
@@ -254,12 +332,171 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		140EB141262168B09DC6F159 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SlackFirebase/Pods-SlackFirebase-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SlackFirebase/Pods-SlackFirebase-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		427F0A11A6E79F96FBEDE33F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SlackFirebaseUITests/Pods-SlackFirebaseUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4D13A2BDAC577FF784D1EF1A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SlackFirebaseUITests/Pods-SlackFirebaseUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		53F736295C736EC3F20F67C5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SlackFirebaseTests/Pods-SlackFirebaseTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		69FA28BE462747843496F7EA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SlackFirebaseUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		76DB5425C4934CDAC702DB29 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SlackFirebaseTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9C4002D23A1AE21074900B10 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SlackFirebase-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AF96DA7F7EA779BBE26C9164 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SlackFirebaseTests/Pods-SlackFirebaseTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FE9CC6BBF34CC97371A3F4E8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SlackFirebase/Pods-SlackFirebase-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		10C355742037A9A6002303BF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				10C3557E2037A9A6002303BF /* ViewController.swift in Sources */,
+				10C355AD2037CDB7002303BF /* LoginViewController.swift in Sources */,
+				10C3557E2037A9A6002303BF /* TeamsViewController.swift in Sources */,
+				10C355AF20388AB5002303BF /* AddNewTeamViewController.swift in Sources */,
+				10C355B22038B5E3002303BF /* Team.swift in Sources */,
 				10C3557C2037A9A6002303BF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -424,6 +661,7 @@
 		};
 		10C355A12037A9A7002303BF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D660C7EDD957C94FEBBCDFF5 /* Pods-SlackFirebase.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -439,6 +677,7 @@
 		};
 		10C355A22037A9A7002303BF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D521ED342A60B8CFC905B5E1 /* Pods-SlackFirebase.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -454,6 +693,7 @@
 		};
 		10C355A42037A9A7002303BF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 15B61586FB3CF83533C60AD1 /* Pods-SlackFirebaseTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -471,6 +711,7 @@
 		};
 		10C355A52037A9A7002303BF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 03142154E18B9E2401E17D07 /* Pods-SlackFirebaseTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -488,6 +729,7 @@
 		};
 		10C355A72037A9A7002303BF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 35137C185684E7933262DA84 /* Pods-SlackFirebaseUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -504,6 +746,7 @@
 		};
 		10C355A82037A9A7002303BF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5A218DD731BA8DCD426DC236 /* Pods-SlackFirebaseUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

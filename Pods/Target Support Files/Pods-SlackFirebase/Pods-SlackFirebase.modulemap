@@ -1,0 +1,6 @@
+framework module Pods_SlackFirebase {
+  umbrella header "Pods-SlackFirebase-umbrella.h"
+
+  export *
+  module * { export * }
+}
