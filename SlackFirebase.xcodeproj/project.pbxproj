@@ -18,6 +18,12 @@
 		10C355AD2037CDB7002303BF /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C355AC2037CDB7002303BF /* LoginViewController.swift */; };
 		10C355AF20388AB5002303BF /* AddNewTeamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C355AE20388AB5002303BF /* AddNewTeamViewController.swift */; };
 		10C355B22038B5E3002303BF /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C355B12038B5E3002303BF /* Team.swift */; };
+		10C355B42038C973002303BF /* CreateUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C355B32038C973002303BF /* CreateUserViewController.swift */; };
+		10C355B62038CD51002303BF /* Member.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C355B52038CD51002303BF /* Member.swift */; };
+		10C355B82038DD18002303BF /* Channel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C355B72038DD18002303BF /* Channel.swift */; };
+		10C355BB20390415002303BF /* FirebaseHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C355BA20390415002303BF /* FirebaseHelper.swift */; };
+		10C355BD203904C6002303BF /* FirebaseKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C355BC203904C6002303BF /* FirebaseKeys.swift */; };
+		10C355BF20391B4F002303BF /* Defaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C355BE20391B4F002303BF /* Defaults.swift */; };
 		D444D331DA02BF10AF884525 /* Pods_SlackFirebaseTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E00BED8D2D47172C6FAF477 /* Pods_SlackFirebaseTests.framework */; };
 		F32CA26767E8AB1D57EFA802 /* Pods_SlackFirebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D113E642BA368D040ED4E417 /* Pods_SlackFirebase.framework */; };
 		F773FA9AA5B3DEFD658191C3 /* Pods_SlackFirebaseUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA9D37D005831597F6E2769A /* Pods_SlackFirebaseUITests.framework */; };
@@ -59,6 +65,12 @@
 		10C355AC2037CDB7002303BF /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		10C355AE20388AB5002303BF /* AddNewTeamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewTeamViewController.swift; sourceTree = "<group>"; };
 		10C355B12038B5E3002303BF /* Team.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
+		10C355B32038C973002303BF /* CreateUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateUserViewController.swift; sourceTree = "<group>"; };
+		10C355B52038CD51002303BF /* Member.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Member.swift; sourceTree = "<group>"; };
+		10C355B72038DD18002303BF /* Channel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Channel.swift; sourceTree = "<group>"; };
+		10C355BA20390415002303BF /* FirebaseHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseHelper.swift; sourceTree = "<group>"; };
+		10C355BC203904C6002303BF /* FirebaseKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseKeys.swift; sourceTree = "<group>"; };
+		10C355BE20391B4F002303BF /* Defaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Defaults.swift; sourceTree = "<group>"; };
 		15B61586FB3CF83533C60AD1 /* Pods-SlackFirebaseTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SlackFirebaseTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SlackFirebaseTests/Pods-SlackFirebaseTests.debug.xcconfig"; sourceTree = "<group>"; };
 		35137C185684E7933262DA84 /* Pods-SlackFirebaseUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SlackFirebaseUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SlackFirebaseUITests/Pods-SlackFirebaseUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		5A218DD731BA8DCD426DC236 /* Pods-SlackFirebaseUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SlackFirebaseUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SlackFirebaseUITests/Pods-SlackFirebaseUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -122,6 +134,7 @@
 		10C3557A2037A9A6002303BF /* SlackFirebase */ = {
 			isa = PBXGroup;
 			children = (
+				10C355B920390400002303BF /* Helpers */,
 				10C355B02038B5D5002303BF /* Models */,
 				10C355AB2037CDA1002303BF /* ViewController */,
 				10C3557B2037A9A6002303BF /* AppDelegate.swift */,
@@ -156,6 +169,7 @@
 			isa = PBXGroup;
 			children = (
 				10C355AC2037CDB7002303BF /* LoginViewController.swift */,
+				10C355B32038C973002303BF /* CreateUserViewController.swift */,
 				10C3557D2037A9A6002303BF /* TeamsViewController.swift */,
 				10C355AE20388AB5002303BF /* AddNewTeamViewController.swift */,
 			);
@@ -166,8 +180,20 @@
 			isa = PBXGroup;
 			children = (
 				10C355B12038B5E3002303BF /* Team.swift */,
+				10C355B52038CD51002303BF /* Member.swift */,
+				10C355B72038DD18002303BF /* Channel.swift */,
+				10C355BE20391B4F002303BF /* Defaults.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		10C355B920390400002303BF /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				10C355BA20390415002303BF /* FirebaseHelper.swift */,
+				10C355BC203904C6002303BF /* FirebaseKeys.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 		4AB0F06B494DB7F49BDA0069 /* Frameworks */ = {
@@ -494,10 +520,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				10C355AD2037CDB7002303BF /* LoginViewController.swift in Sources */,
+				10C355B82038DD18002303BF /* Channel.swift in Sources */,
+				10C355BD203904C6002303BF /* FirebaseKeys.swift in Sources */,
 				10C3557E2037A9A6002303BF /* TeamsViewController.swift in Sources */,
 				10C355AF20388AB5002303BF /* AddNewTeamViewController.swift in Sources */,
+				10C355BB20390415002303BF /* FirebaseHelper.swift in Sources */,
 				10C355B22038B5E3002303BF /* Team.swift in Sources */,
 				10C3557C2037A9A6002303BF /* AppDelegate.swift in Sources */,
+				10C355B62038CD51002303BF /* Member.swift in Sources */,
+				10C355B42038C973002303BF /* CreateUserViewController.swift in Sources */,
+				10C355BF20391B4F002303BF /* Defaults.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

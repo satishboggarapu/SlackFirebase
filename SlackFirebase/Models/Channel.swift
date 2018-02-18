@@ -1,5 +1,5 @@
 //
-//  Team.swift
+//  Channel.swift
 //  SlackFirebase
 //
 //  Created by Satish Boggarapu on 2/17/18.
@@ -8,25 +8,27 @@
 
 import Foundation
 
-public class Team: CustomStringConvertible {
+public class Channel: CustomStringConvertible {
     var id: String!
+    var teamId: String!
     var name: String!
-    var url: String!
-    var members: [String: String]!
+//    var chatID: String!
+    var members: [Member]!
     
-    init(id: String, name: String, url: String, members: [String: String]) {
+    init(id: String, teamId: String, name: String, members: [Member]) {
         self.id = id
+        self.teamId = teamId
         self.name = name
-        self.url = url
         self.members = members
     }
     
     public var description: String {
-        var description = "Team("
+        var description = "Channel("
         description += "id: \(self.id!),"
+        description += "teaemId: \(self.teamId!),"
         description += "name: \(self.name!),"
-        description += "url: \(self.url!),"
-        description += "members: \(self.members!))"
+        description += "memebers: \(self.members!))"
         return description
     }
+    
 }

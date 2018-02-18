@@ -20,6 +20,7 @@ class AddNewTeamViewController: UIViewController {
     // MARK: Attributes
     var ref: DatabaseReference!
     var handle: AuthStateDidChangeListenerHandle!
+    var currentUser: Member!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,12 +28,13 @@ class AddNewTeamViewController: UIViewController {
         ref = Database.database().reference()
         
         doneButton.action = #selector(doneButtonAction(_:))
+        currentUser = FirebaseHelper.getCurrentUserFromDefaults()!
     }
 
     @objc func doneButtonAction(_ sender: UIBarButtonItem) {
         let name = teamNameTextField.text!
         let url = teamUrlTextField.text!
-        let team = Team(teamID: "", teamName: name, teamUrl: url)
+        let team = Team(id: "", name: name, url: url, members: [:])
         addNewTeam(team: team)
         navigationController?.popViewController(animated: true)
     }
@@ -43,12 +45,24 @@ class AddNewTeamViewController: UIViewController {
         let userID = Auth.auth().currentUser?.uid
         ref.child("users").child(userID!).observeSingleEvent(of: .value, with: { (snapshot) in
             let key = self.ref.child("teams").childByAutoId().key
-            let post = ["team_name": team.teamName,
-                        "team_url": team.teamUrl]
-            let childUpdates = ["/teams/\(key)": post]
+            team.id = key
+            let newMember = ["\(self.currentUser.userName!)": self.currentUser.id]
+            let newTeam = ["team_name": team.name,
+                           "team_url": team.url,
+                           "members": newMember] as [String : Any]
+            
+            let childUpdates = ["/teams/\(key)": newTeam]
             self.ref.updateChildValues(childUpdates)
+            self.addTeamToUser(team: team)
+
             print("Firebase Write - Added new team")
-        })
+        }) { (error) in
+            print(error.localizedDescription)
+        }
+    }
+    
+    func addTeamToUser(team: Team) {
+        ref.child("users").child(currentUser.id).child("teams").child(team.name).setValue(team.id)
     }
     
     override func viewWillAppear(_ animated: Bool) {
