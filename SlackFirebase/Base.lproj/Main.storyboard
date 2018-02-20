@@ -180,20 +180,72 @@
                     <view key="view" contentMode="scaleToFill" id="4Bo-tR-L8j">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="70" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="E60-7R-iNZ">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="69" id="TNQ-ur-Kpm" customClass="TeamsTableViewCell" customModule="SlackFirebase" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="69"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="TNQ-ur-Kpm" id="Zkn-gl-5dB">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="68.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DOO-xt-IVk">
+                                                    <rect key="frame" x="16" y="42.5" width="343" height="18"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uZc-qj-mvb">
+                                                    <rect key="frame" x="16" y="8" width="343" height="29.5"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="DOO-xt-IVk" firstAttribute="top" secondItem="uZc-qj-mvb" secondAttribute="bottom" constant="5" id="Fy4-2k-hRf"/>
+                                                <constraint firstAttribute="bottom" secondItem="DOO-xt-IVk" secondAttribute="bottom" constant="8" id="J0h-yN-X2P"/>
+                                                <constraint firstAttribute="trailing" secondItem="DOO-xt-IVk" secondAttribute="trailing" constant="16" id="KoY-GV-buN"/>
+                                                <constraint firstItem="DOO-xt-IVk" firstAttribute="leading" secondItem="Zkn-gl-5dB" secondAttribute="leading" constant="16" id="UMy-c3-7jb"/>
+                                                <constraint firstItem="uZc-qj-mvb" firstAttribute="top" secondItem="Zkn-gl-5dB" secondAttribute="top" constant="8" id="emA-Wf-fLD"/>
+                                                <constraint firstItem="uZc-qj-mvb" firstAttribute="leading" secondItem="Zkn-gl-5dB" secondAttribute="leading" constant="16" id="fH5-Jm-sPu"/>
+                                                <constraint firstAttribute="trailing" secondItem="uZc-qj-mvb" secondAttribute="trailing" constant="16" id="yei-2m-0hb"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="teamNameLabel" destination="uZc-qj-mvb" id="NNF-Tv-QKI"/>
+                                            <outlet property="teamUrlLabel" destination="DOO-xt-IVk" id="jG3-3e-fSY"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="E60-7R-iNZ" firstAttribute="bottom" secondItem="EJU-zC-q0r" secondAttribute="bottom" id="H7r-Fp-n3e"/>
+                            <constraint firstItem="E60-7R-iNZ" firstAttribute="top" secondItem="EJU-zC-q0r" secondAttribute="top" id="M80-HI-DMP"/>
+                            <constraint firstItem="E60-7R-iNZ" firstAttribute="leading" secondItem="EJU-zC-q0r" secondAttribute="leading" id="UXG-Xk-oKF"/>
+                            <constraint firstItem="E60-7R-iNZ" firstAttribute="trailing" secondItem="EJU-zC-q0r" secondAttribute="trailing" id="wZe-Js-nNe"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="EJU-zC-q0r"/>
                     </view>
                     <navigationItem key="navigationItem" id="VLa-tW-frD">
                         <barButtonItem key="rightBarButtonItem" style="plain" systemItem="add" id="E4i-Kw-GPd">
                             <connections>
-                                <segue destination="Ess-uT-fl7" kind="show" id="EB1-Jy-R6Q"/>
+                                <segue destination="Ess-uT-fl7" kind="show" identifier="addNewTeamSegue" id="EB1-Jy-R6Q"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="E60-7R-iNZ" id="CKe-LY-21f"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jl2-UL-I6o" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1294" y="459"/>
+            <point key="canvasLocation" x="1293.5999999999999" y="458.32083958020991"/>
         </scene>
         <!--Add a New Team-->
         <scene sceneID="jGi-0r-kc8">

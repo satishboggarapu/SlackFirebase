@@ -21,6 +21,13 @@ public class Team: CustomStringConvertible {
         self.members = members
     }
     
+    init(jsonObject: NSDictionary, teamId: String) {
+        self.id = teamId
+        self.name = jsonObject.value(forKey: "team_name") as! String
+        self.url = jsonObject.value(forKey: "team_url") as! String
+        self.members = jsonObject.value(forKey: "members") as! [String: String]
+    }
+    
     public var description: String {
         var description = "Team("
         description += "id: \(self.id!),"

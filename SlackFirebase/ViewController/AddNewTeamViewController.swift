@@ -10,6 +10,10 @@ import UIKit
 import Firebase
 import FirebaseAuth
 
+protocol AddNewTeamViewControllerDelegate: class {
+    func addedANewTeam()
+}
+
 class AddNewTeamViewController: UIViewController {
 
     // MARK: UIElements
@@ -21,6 +25,7 @@ class AddNewTeamViewController: UIViewController {
     var ref: DatabaseReference!
     var handle: AuthStateDidChangeListenerHandle!
     var currentUser: Member!
+    weak var delegate: AddNewTeamViewControllerDelegate?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -54,7 +59,7 @@ class AddNewTeamViewController: UIViewController {
             let childUpdates = ["/teams/\(key)": newTeam]
             self.ref.updateChildValues(childUpdates)
             self.addTeamToUser(team: team)
-
+            self.delegate?.addedANewTeam()
             print("Firebase Write - Added new team")
         }) { (error) in
             print(error.localizedDescription)

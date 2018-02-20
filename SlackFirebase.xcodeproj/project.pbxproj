@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		105825A2203BB4FA007B1E6D /* TeamsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105825A1203BB4FA007B1E6D /* TeamsTableViewCell.swift */; };
 		10C3557C2037A9A6002303BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C3557B2037A9A6002303BF /* AppDelegate.swift */; };
 		10C3557E2037A9A6002303BF /* TeamsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C3557D2037A9A6002303BF /* TeamsViewController.swift */; };
 		10C355812037A9A6002303BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10C3557F2037A9A6002303BF /* Main.storyboard */; };
@@ -48,6 +49,7 @@
 
 /* Begin PBXFileReference section */
 		03142154E18B9E2401E17D07 /* Pods-SlackFirebaseTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SlackFirebaseTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SlackFirebaseTests/Pods-SlackFirebaseTests.release.xcconfig"; sourceTree = "<group>"; };
+		105825A1203BB4FA007B1E6D /* TeamsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsTableViewCell.swift; sourceTree = "<group>"; };
 		10C355782037A9A6002303BF /* SlackFirebase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SlackFirebase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		10C3557B2037A9A6002303BF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		10C3557D2037A9A6002303BF /* TeamsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsViewController.swift; sourceTree = "<group>"; };
@@ -109,6 +111,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		105825A0203BB4D7007B1E6D /* CustomCells */ = {
+			isa = PBXGroup;
+			children = (
+				105825A1203BB4FA007B1E6D /* TeamsTableViewCell.swift */,
+			);
+			path = CustomCells;
+			sourceTree = "<group>";
+		};
 		10C3556F2037A9A6002303BF = {
 			isa = PBXGroup;
 			children = (
@@ -134,6 +144,7 @@
 		10C3557A2037A9A6002303BF /* SlackFirebase */ = {
 			isa = PBXGroup;
 			children = (
+				105825A0203BB4D7007B1E6D /* CustomCells */,
 				10C355B920390400002303BF /* Helpers */,
 				10C355B02038B5D5002303BF /* Models */,
 				10C355AB2037CDA1002303BF /* ViewController */,
@@ -527,6 +538,7 @@
 				10C355BB20390415002303BF /* FirebaseHelper.swift in Sources */,
 				10C355B22038B5E3002303BF /* Team.swift in Sources */,
 				10C3557C2037A9A6002303BF /* AppDelegate.swift in Sources */,
+				105825A2203BB4FA007B1E6D /* TeamsTableViewCell.swift in Sources */,
 				10C355B62038CD51002303BF /* Member.swift in Sources */,
 				10C355B42038C973002303BF /* CreateUserViewController.swift in Sources */,
 				10C355BF20391B4F002303BF /* Defaults.swift in Sources */,
